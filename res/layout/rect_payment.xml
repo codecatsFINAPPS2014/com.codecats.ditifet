@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcn2"
+    android:orientation="vertical"
+    tools:context="com.codecats.ditifet.MainActivity"
+    tools:deviceIds="wear_square" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#80ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/welcomeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" >
+
+            <!-- android:textColor="#89869D" -->
+
+            <TextView
+                android:id="@+id/orderNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8sp"
+                android:text="@string/orderNum"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderNum"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:background="#44000000"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/moneyzCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2sp"
+                    android:text="@string/moneyzCost"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/angry_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circleshape"
+                android:text="PAY"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
